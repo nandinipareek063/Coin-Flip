@@ -12,3 +12,16 @@ then
 else
         echo "Tails win"
 fi
+
+#U2
+echo "As a simulator, loop through Multiple times of flipping a coin and show number of times head and tail has won"
+for((i=1;i<5;i++))
+do
+        no=$((RANDOM%2))
+        if [ $no -eq 1 ]
+        then
+                echo "Heads win"
+        else
+                 echo "Tails win"
+        fi
+done
